@@ -1,0 +1,566 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100vh;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  background: #101010;
+  line-height: 1.5;
+}
+.color{
+  color: #101010;
+  color: #009e66;
+  color: #9f9f9fd5;
+  color: #101010;
+  color: #101010;
+}
+body::-webkit-scrollbar{
+  width: 7px;
+  background-color: #101010;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #009e66;
+  border-radius: 3px;
+}
+body::-webkit-scrollbar-track{
+  box-shadow: 0 0 5px 7px #009e66;
+}
+input, button{
+  border: none;
+  outline: none;
+}
+a{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px;
+  text-decoration: none;
+}
+h1, h2, h3,h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+  margin: 6px 0;
+  color: #fff;
+}
+h1{
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 700;
+
+}
+h2{
+  font-size: 40px;
+  line-height: 42px;
+}
+h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+h4{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+h5{
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+}
+p{
+  color: #9f9f9fd5;
+  font-size: 17px;
+  line-height: 26px;
+}           
+
+.port_action{
+  padding: 7px 15px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: #009e66;
+  border-radius: 0;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.port_action:hover{
+  background-color: #fff;
+  color: #009e66;
+}
+.typewriter {
+	width: 60%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid #101010;
+	animation: cursor 0.4s step-start infinite, 
+    text 5s steps(14) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #009e66; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 75%; 
+  }
+}
+/*==================start-NAVBAR-space==============*/
+.nav_panel{
+  width: 100%;
+  padding: 5px 0;
+  position: relative;
+  background-color: #101010a1;
+  transition: all 0.4s;
+  z-index: 99;
+}
+.fixed{
+  position: fixed;
+  padding: 0;
+  box-shadow: 0 0 7px 7px #101010a6;
+  z-index: 999;
+}
+.nav_panel .navigation{
+  padding: 0;
+}
+.nav_panel .navigation .navbar-brand{
+  width: 120px;
+  height: 68px;
+}
+.nav_panel .navigation .navbar-brand img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nav_panel .navigation .toggle_btn{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.8s;
+}
+.nav_panel .navigation .toggle_btn::before, .nav_panel .navigation .toggle_btn::after{
+  content: '';
+  width: 85%;
+  height: 3%;
+  background-color: #fff;
+  transition: all 0.8s;
+
+}
+.nav_panel .navigation .toggle_btn::before{
+  position: absolute;
+  top: 0;
+  box-shadow: 0 10px 0 0 #fff;
+  transform: translateY(12px);
+}
+.nav_panel .navigation .toggle_btn::after{
+  position: absolute;
+  bottom:0;
+  transform: translateY(-12px);
+}
+.nav_panel .navigation .toggle_btn.active::before{
+  transform: translateY(24px) rotate(45deg);
+  box-shadow: none;
+}
+.nav_panel .navigation .toggle_btn.active::after{
+  transform: translateY(-24px) rotate(-45deg);
+}
+.nav_panel .navigation ul{
+  border-bottom: 1px solid transparent;
+}
+.nav_panel .navigation ul li a{
+  color: #9f9f9f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  transition: all 0.4s;
+  border-bottom: 1px solid transparent;
+  
+}
+.nav_panel .navigation ul li a:hover{
+  color: #009e66;
+  border-bottom: 1px solid #009e66;
+}
+/*==================end-NAVBAR-space==============*/
+
+/*-==================start-BANNER-space==============*/
+.port_banner{
+  z-index: 0;
+  width: 100%;
+  position: relative;
+  padding-top: 75px;
+  min-height: 65%;
+  padding-bottom: 75px;
+}
+.port_banner::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+   min-height: 65%;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(260deg, #009e671b, #101010);
+}
+.port_banner .small_intro span{
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+.port_banner .small_intro h5{
+  margin: 7px 0 25px 0;
+}
+.port_banner .personal_pic{
+  width: 100%;
+  height: 360px;
+}
+.port_banner .personal_pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.port_banner .my_info .info{
+  padding: 5px 15px;
+  border-right: 1px solid #fff;
+}
+
+.port_banner .my_info .info h6{
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+.port_banner .my_info .info a{
+  color: #009e66;
+  padding-left: 0;
+}
+/*-==================end-BANNER-space==============*/
+.commom_head{
+  position: relative;
+}
+.commom_head span{
+  font-size: 108px;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px  #fff;
+  color: transparent;
+  opacity: 0.2;
+  z-index: 0;
+  position: relative;
+}
+.commom_head h2{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/*-==================start-About-space==============*/
+
+/*-==================end-About-space==============*/
+
+
+/*-==================start-BANNER-space==============*/
+
+/*-==================end-BANNER-space==============*/
+
+
+/*-==================start-BANNER-space==============*/
+
+/*-==================end-BANNER-space==============*/
+
+
+/*-==================start-BANNER-space==============*/
+
+/*-==================end-BANNER-space==============*/
+
+
+/*-==================start-contact-space==============*/
+.contact_space .locate_me{
+  width: 100%;
+  height: 320px;
+}
+.contact_space .icon{
+  width: 65px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #009e66;
+  font-size: 18px;
+  color: #009e66;
+}
+.contact_space .detail a, .contact_space .detail span{
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.5px
+}
+/*-==================end-contact-space==============*/
+/*-==================start-footer-space==============*/
+footer{
+  background-color: #000;
+}
+footer p{
+  color: #fff;
+}
+footer p abbr[title]{
+  color: #009e66;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+/*-==================end-footer-space==============*/
+@media only screen and (min-width:1200px){
+  html,body{
+    width: 100%;
+    height: 100vh;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    background: #101010;
+    line-height: 1.5;
+  }
+  .color{
+    color: #101010;
+    color: #009e66;
+    color: #9f9f9f;
+    color: #101010;
+    color: #101010;
+  }
+  input, button{
+    border: none;
+    outline: none;
+  }
+  a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px;
+    text-decoration: none;
+  }
+  h1, h2, h3,h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    margin: 6px 0;
+    color: #fff;
+  }
+  h1{
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+  
+  }
+  h2{
+    font-size: 40px;
+    line-height: 42px;
+  }
+  h3{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+  h5{
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  p{
+    font-size: 17px;
+    line-height: 26px;
+  }           
+
+}
+@media only screen and (max-width:991px){
+  html,body{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 48px;
+    line-height: 48px;
+  }
+  h2{
+    font-size: 36px;
+    line-height: 36px;
+  }
+  h3{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h5{
+    font-size: 26px;
+    line-height: 28px;
+  }
+  p{
+    font-size: 15px;
+  }           
+  .port_banner .personal_pic {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .port_banner {
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
+  .nav_panel .navigation ul {
+    padding: 30px;
+  }
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 60%; 
+    }
+  }
+   .commom_head span{
+    font-size: 75px;
+    line-height: 75px;
+  }
+  .commom_head h2 {
+    top: 30%;
+  }
+}
+@media only screen and (max-width:768px){
+  h1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2{
+    font-size: 28px;
+    line-height: 28px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  h5{
+    font-size: 20px;
+    line-height: 26px;
+  }
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 65%; 
+    }
+  }
+  .commom_head span{
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .commom_head h2 {
+    top: 27%;
+  }
+}
+@media only screen and (max-width:576px){
+  h1{
+    font-size: 32px;
+    line-height: 32px;
+  }
+  h2{
+    font-size: 26px;
+    line-height: 26px;
+  }
+  h3{
+    font-size: 17px;
+  }
+  h4{
+    font-size: 17px;
+  }
+  h5{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .port_banner .personal_pic {
+    width: 75%;
+  }
+  .nav_panel .navigation .navbar-brand {
+    width: 95px;
+  }
+  .nav_panel .navigation .toggle_btn {
+    width: 48px;
+    height: 48px;
+  }
+  .port_banner .my_info .info{
+    margin: 10px 0;
+    border-right: none;
+    padding: 15px 5px;
+    border-bottom: 1px solid #fff;
+  }
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 55%; 
+    }
+  }
+}
+@media only screen and (max-width:480px){
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 68%; 
+    }
+  }
+  .commom_head span{
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .commom_head h2 {
+    top: 10%;
+  }
+}
+@media only screen and (max-width:380px){
+  .port_banner .personal_pic {
+    width: 100%;
+  }
+  .nav_panel .navigation .navbar-brand {
+    width: 80px;
+    height: 55px;
+  }
+}
+@media only screen and (max-width:380px){
+  .port_banner .personal_pic {
+    width: 100%;
+  }
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 95%; 
+    }
+  }
+}
