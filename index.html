@@ -26,25 +26,15 @@
     <header class="nav_panel" id="nav_scroll">
       <nav class="navbar navigation navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/image/logo_name.png" alt=""></a>          
-          <span id="toggle_menu" class="d-lg-none navbar-toggler toggle_btn" type="button" data-bs-toggle="collapse" data-bs-target="#portNav" aria-controls="portNav" aria-expanded="false" aria-label="Toggle navigation"></span>
-          <div class="collapse navbar-collapse justify-content-end" id="portNav">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <a class="navbar-brand" href="#"><img src="assets/image/logo_name.png" alt=""></a>                    
+          <div class="align-items-center d-flex justify-content-end" id="portNav">
+            <ul class="d-flex align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Skill</a>
-              </li>     
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>    
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>          
+                <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+              </li>                      
             </ul>
           </div>
         </div>
@@ -52,7 +42,7 @@
     </header>
       
     <!--==================end-NAVBAR-space==============-->
-
+    
 
 
     <!--==================start-BANNER-space==============-->
@@ -78,14 +68,14 @@
                   </div>
                   <div class="col-sm-4 px-0">
                     <div class="info">
-                      <h6>Email</h6>
-                      <div><a href="#">demo@gamil.com</a></div>
+                      <h6>Phone</h6>
+                      <div><a href="#">+91 787878878</a></div>
                     </div>
                   </div>
                   <div class="col-sm-4 px-0" >
                     <div class="info" style="border: none;">
-                      <h6>Email</h6>
-                      <div><a href="#">demo@gamil.com</a></div>
+                      <h6>Location</h6>
+                      <div><a href="#">some where Road,Kolkata</a></div>
                     </div>
                   </div>
                 </div>
@@ -102,153 +92,259 @@
       </div>
     </section>
     <!--==================end-BANNER-space==============-->
-    
-    <!--==================start-PERSONAL-space==============-->
-    <section class="about_self py-5">
+    <section class="nav_area pt-5">
       <div class="container">
-        <div class="commom_head">
-          <span>About</span>
-          <h2>About me</h2>
-        </div>
-        <div class="full_descrip">
-          <!--<ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="about_me-tab" data-bs-toggle="tab" data-bs-target="#about_me" type="button" role="tab" aria-controls="about_me" aria-selected="true">About me</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="about_edu-tab" data-bs-toggle="tab" data-bs-target="#about_edu" type="button" role="tab" aria-controls="about_edu" aria-selected="true">About me</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="about_me" role="tabpanel" aria-labelledby="about_me-tab">
-              <div class="row">
-                <div class="col-lg-6">
-
-                </div>
-              </div>
-            </div>            
-            <div class="tab-pane fade" id="about_edu" role="tabpanel" aria-labelledby="about_edu-tab">...</div>            
-          </div>-->
-          <div class="row mx-0">
-            <div class="col-lg-6">
-              <div class="my_steps">
-                <h5>Computer Science</h5>
-                <span class="passing_out">Calcutta Univercity / 2021 - 2022</span>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reiciendis soluta nemo.</p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="my_steps">
-                <h5>Computer Science</h5>
-                <span class="passing_out">Calcutta Univercity / 2021 - 2022</span>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reiciendis soluta nemo.</p>
-              </div>
-            </div>
-          </div>        
-        </div>
+        <nav class="status_navigation">
+          <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-self-tab" data-bs-toggle="tab" data-bs-target="#nav-self" type="button" role="tab" aria-controls="nav-self" aria-selected="true">My Self</button>
+            <button class="nav-link" id="nav-portfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-port" type="button" role="tab" aria-controls="nav-port" aria-selected="false">Portfolio</button>
+            <button class="nav-link" id="nav-skill-tab" data-bs-toggle="tab" data-bs-target="#nav-skill" type="button" role="tab" aria-controls="nav-skill" aria-selected="false">Skill</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="true">Contact</button>        
+          </div>
+        </nav>        
       </div>
     </section>
-    <!--==================end-PERSONAL-space==============-->
-        
-    <!--==================start-PORTFOLIO-space==============-->
-    <section class="about_self py-5">
-      <div class="container">
-        <div class="commom_head">
-          <span>Portfolio</span>
-          <h2>My Portfolio</h2>
+    <div class="tab-content nav_area_content" id="nav-tabContent">
+      <!--==================start-PERSONAL-space==============-->
+      <section class="tab-pane pb-3 pb-md-5 pt-5 about_self fade show active" id="nav-self" role="tabpanel" aria-labelledby="nav-self-tab">
+        <div class="container">
+          <div class="commom_head">
+            <span>About</span>
+            <h2>About me</h2>
+          </div>
+          <div class="full_descrip">        
+            <div class="row mx-0">
+              <div class="col-lg-6">
+                <div class="my_steps">
+                  <h5>Computer Science</h5>
+                  <span class="passing_out">Calcutta Univercity / 2021 - 2022</span>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reiciendis soluta nemo.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="my_steps">
+                  <h5>Computer Science</h5>
+                  <span class="passing_out">Calcutta Univercity / 2021 - 2022</span>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor reiciendis soluta nemo.</p>
+                </div>
+              </div>
+            </div>        
+          </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="project_show">
-              <a href="#">
+      </section>
+      <!--==================end-PERSONAL-space==============-->
+
+      <!--==================start-PORTFOLIO-space==============-->
+      <section class="tab-pane pb-3 pb-md-5 pt-5 about_self fade" id="nav-port" role="tabpanel" aria-labelledby="nav-portfolio-tab">
+        <div class="container">
+          <div class="commom_head">
+            <span>Portfolio</span>
+            <h2>My Portfolio</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="project_show">
                 <div class="temaplate_pic">
-                  <img src="assets/image/info-img.jpg" alt="">
+                  <a href="#" class="img_control">
+                    <img src="assets/image/layout.png" alt="">
+                  </a>
                 </div>
                 <div class="short_details">
                   <h3>Project name</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe inventore ut?</p>
                 </div>
-              </a>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--==================end-PORTFOLIO-space==============-->
+            <div class="col-lg-4 col-sm-6">
+              <div class="project_show">
+                <div class="temaplate_pic">
+                  <a href="#" class="img_control">
+                    <img src="assets/image/layout.png" alt="">
+                  </a>
+                </div>
+                <div class="short_details">
+                  <h3>Project name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe inventore ut?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project_show">
+                <div class="temaplate_pic">
+                  <a href="#" class="img_control">
+                    <img src="assets/image/layout.png" alt="">
+                  </a>
+                </div>
+                <div class="short_details">
+                  <h3>Project name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe inventore ut?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project_show">
+                <div class="temaplate_pic">
+                  <a href="#" class="img_control">
+                    <img src="assets/image/layout.png" alt="">
+                  </a>
+                </div>
+                <div class="short_details">
+                  <h3>Project name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe inventore ut?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project_show">
+                <div class="temaplate_pic">
+                  <a href="#" class="img_control">
+                    <img src="assets/image/layout.png" alt="">
+                  </a>
+                </div>
+                <div class="short_details">
+                  <h3>Project name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe inventore ut?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="project_show">
+                <div class="temaplate_pic">
+                  <a href="#" class="img_control">
+                    <img src="assets/image/layout.png" alt="">
+                  </a>
+                </div>
+                <div class="short_details">
+                  <h3>Project name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores saepe inventore ut?</p>
+                </div>
+              </div>
+            </div>
 
-    <!--==================start-SKILL-space==============-->
-    <section class="skill_space py-5">
-      <div class="container">
-        <div class="commom_head">
-          <span>Skill</span>
-          <h2>My Skill</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="skill_area">
-              <div class="skill_icon">
-                <svg id="Layer_1" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path d="M5,3C4.724,3,4.5,2.777,4.5,2.5v-2C4.5,0.224,4.724,0,5,0s0.5,0.224,0.5,0.5v2C5.5,2.777,5.276,3,5,3z"></path></g><g><path d="M7,2H5C4.724,2,4.5,1.777,4.5,1.5S4.724,1,5,1h2c0.276,0,0.5,0.224,0.5,0.5S7.276,2,7,2z"></path></g><g><path d="M7,3C6.724,3,6.5,2.777,6.5,2.5v-2C6.5,0.224,6.724,0,7,0s0.5,0.224,0.5,0.5v2C7.5,2.777,7.276,3,7,3z"></path></g><g><path d="M11,1H9C8.724,1,8.5,0.777,8.5,0.5S8.724,0,9,0h2c0.276,0,0.5,0.224,0.5,0.5S11.276,1,11,1z"></path></g><g><path d="M10,3C9.724,3,9.5,2.777,9.5,2.5v-2C9.5,0.224,9.724,0,10,0s0.5,0.224,0.5,0.5v2C10.5,2.777,10.276,3,10,3z"></path></g><g><path d="M16,3c-0.276,0-0.5-0.224-0.5-0.5V2l-0.6,0.8c-0.188,0.252-0.611,0.252-0.8,0L13.5,2v0.5C13.5,2.777,13.276,3,13,3    s-0.5-0.224-0.5-0.5v-2c0-0.215,0.138-0.406,0.342-0.474C13.046-0.043,13.271,0.028,13.4,0.2l1.1,1.466L15.6,0.2    c0.129-0.172,0.353-0.243,0.558-0.174C16.362,0.094,16.5,0.285,16.5,0.5v2C16.5,2.777,16.276,3,16,3z"></path></g><g><path d="M19.5,3H18c-0.276,0-0.5-0.224-0.5-0.5v-2C17.5,0.224,17.724,0,18,0s0.5,0.224,0.5,0.5V2h1C19.776,2,20,2.224,20,2.5    S19.776,3,19.5,3z"></path></g><g><path d="M12.5,24c-0.046,0-0.092-0.006-0.137-0.019l-7-2c-0.198-0.057-0.341-0.229-0.361-0.434l-1.5-16    C3.489,5.407,3.536,5.268,3.63,5.164C3.725,5.059,3.859,5,4,5h16c0.141,0,0.275,0.059,0.37,0.164    c0.095,0.104,0.141,0.243,0.128,0.383l-1.5,16c-0.019,0.197-0.152,0.365-0.34,0.427l-6,2C12.607,23.991,12.553,24,12.5,24z     M5.966,21.113l6.523,1.863l5.544-1.848L19.451,6H4.549L5.966,21.113z"></path></g><g><path d="M12.5,20c-0.046,0-0.092-0.006-0.137-0.019l-3.5-1c-0.172-0.049-0.305-0.187-0.348-0.36l-0.5-2    c-0.067-0.268,0.096-0.539,0.364-0.606c0.266-0.067,0.539,0.095,0.606,0.364l0.43,1.72l3.074,0.878l2.546-0.849L15.447,14H8    c-0.252,0-0.465-0.188-0.496-0.438l-0.5-4C6.986,9.42,7.03,9.277,7.125,9.169C7.22,9.062,7.356,9,7.5,9H17    c0.276,0,0.5,0.224,0.5,0.5S17.276,10,17,10H8.066l0.375,3H16c0.141,0,0.276,0.06,0.371,0.165    c0.095,0.104,0.141,0.245,0.127,0.385l-0.5,5c-0.02,0.196-0.152,0.362-0.339,0.424l-3,1C12.607,19.991,12.553,20,12.5,20z"></path></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-              </div>
-              <h4>Html5</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
-            </div>
+          </div>
+          <div class="btn_area text-center p-3">
+            <a href="#" class="port_action">View More</a>
           </div>
         </div>
-      </div>
-    </section>
-    <!--==================end-SKILL-space==============-->
-
-    <!--==================start-CONTACT-space==============-->
-    <section class="contact_space py-5">
-      <div class="container">
-        <div class="commom_head">
-          <span>Contact</span>
-          <h2>Contact me</h2>
-        </div>
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-7">
-            <div class="locate_me">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1039986005517!2d88.4252458144341!3d22.575213338565156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275927b0061ad%3A0x496c2fab98874c86!2sWebskitters%20Technology%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1672403042832!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      </section>
+      <!--==================end-PORTFOLIO-space==============-->
+      <!--==================start-SKILL-space==============-->
+      <section class="tab-pane pt-5 pb-3 pb-md-5 skill_space fade" id="nav-skill" role="tabpanel" aria-labelledby="nav-skill-tab">
+        <div class="container">
+          <div class="commom_head">
+            <span>Skill</span>
+            <h2>My Skill</h2>
           </div>
-          <div class="col-lg-5">
-            <div class="cotact_info">
-              <h3>Contact info</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit neque dolore.</p>
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <div class="icon"><i class="fas fa-phone"></i></div>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-4 col-sm-6">
+              <div class="skill_area">
+                <div class="skill_icon">
+                  <img src="assets/image/html.svg" alt="">
                 </div>
-                <div class="col-8">
-                  <h6>Name</h6>
-                  <div class="detail"><span>Sk MustafizUddin</span></div>
-                </div>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
               </div>
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <div class="icon"><i class="fas fa-phone"></i></div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="skill_area">
+                <div class="skill_icon">
+                  <img src="assets/image/css.svg" alt="">
                 </div>
-                <div class="col-8">
-                  <h6>Email</h6>
-                  <div class="detail"><a href="#"><span>mus@gamil.com</span></a></div>
-                </div>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
               </div>
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <div class="icon"><i class="fas fa-phone"></i></div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="skill_area">
+                <div class="skill_icon">
+                  <img src="assets/image/boot.svg" alt="">
                 </div>
-                <div class="col-8">
-                  <h6>Phone</h6>
-                  <div class="detail"><a href="#"><span>7445694853</span></a></div>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="skill_area">
+                <div class="skill_icon">
+                  <img src="assets/image/js.svg" alt="">
                 </div>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="skill_area">
+                <div class="skill_icon">
+                  <img src="assets/image/jquery.svg" alt="">
+                </div>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="skill_area">
+                <div class="skill_icon">
+                  <img src="assets/image/sass.svg" alt="">
+                </div>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore saepe amet.</p>
               </div>              
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--==================end-CONTACT-space==============-->
-
+      </section>
+      <!--==================end-SKILL-space==============-->
+      <!--==================start-CONTACT-space==============-->
+      <section class="contact_space pb-3 pb-md-5 pt-5 tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="container">
+          <div class="commom_head">
+            <span>Contact</span>
+            <h2>Contact me</h2>
+          </div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-7 order-1 order-lg-0">
+              <div class="locate_me">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1039986005517!2d88.4252458144341!3d22.575213338565156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275927b0061ad%3A0x496c2fab98874c86!2sWebskitters%20Technology%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1672403042832!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="col-lg-5 order-0 order-lg-1">
+              <div class="cotact_info">
+                <h3>Contact info</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit neque dolore.</p>
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                  </div>
+                  <div class="col-8">
+                    <h6>Name</h6>
+                    <div class="detail"><span>Sk MustafizUddin</span></div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                  </div>
+                  <div class="col-8">
+                    <h6>Email</h6>
+                    <div class="detail"><a href="#"><span>mus@gamil.com</span></a></div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                  </div>
+                  <div class="col-8">
+                    <h6>Phone</h6>
+                    <div class="detail"><a href="#"><span>7445694853</span></a></div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================end-CONTACT-space==============-->
+  </div>
     <!--==================start-footer-space==============-->
     <footer class="py-3">
       <div class="text-center">

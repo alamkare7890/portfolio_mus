@@ -35,6 +35,12 @@ input, button{
   border: none;
   outline: none;
 }
+ul li{
+  list-style: none;
+}
+ul{
+  margin: 0;
+}
 a{
   display: inline-block;
   font-size: 15px;
@@ -76,6 +82,7 @@ p{
   color: #9f9f9fd5;
   font-size: 17px;
   line-height: 26px;
+  font-weight: 300;
 }           
 
 .port_action{
@@ -142,49 +149,19 @@ p{
   height: 100%;
   object-fit: contain;
 }
-.nav_panel .navigation .toggle_btn{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: all 0.8s;
-}
-.nav_panel .navigation .toggle_btn::before, .nav_panel .navigation .toggle_btn::after{
-  content: '';
-  width: 85%;
-  height: 3%;
-  background-color: #fff;
-  transition: all 0.8s;
 
-}
-.nav_panel .navigation .toggle_btn::before{
-  position: absolute;
-  top: 0;
-  box-shadow: 0 10px 0 0 #fff;
-  transform: translateY(12px);
-}
-.nav_panel .navigation .toggle_btn::after{
-  position: absolute;
-  bottom:0;
-  transform: translateY(-12px);
-}
-.nav_panel .navigation .toggle_btn.active::before{
-  transform: translateY(24px) rotate(45deg);
-  box-shadow: none;
-}
-.nav_panel .navigation .toggle_btn.active::after{
-  transform: translateY(-24px) rotate(-45deg);
-}
 .nav_panel .navigation ul{
   border-bottom: 1px solid transparent;
+}
+.nav_panel .navigation ul li{
+  margin-right: 15px;
 }
 .nav_panel .navigation ul li a{
   color: #9f9f9f;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 400;
+  font-size: 30px;
   transition: all 0.4s;
   border-bottom: 1px solid transparent;
   
@@ -270,6 +247,78 @@ p{
   right: 0;
   z-index: 1;
 }
+.nav_area .status_navigation{
+  width: 75%;
+  margin:0 auto;
+}
+.nav_area .status_navigation .nav-tabs{
+  border-color: #009e66;
+}
+.nav_area .status_navigation button{
+  color: #9f9f9fd5;
+  margin: 0 5px;
+  border-radius: 0;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+}
+.nav_area .status_navigation button.active{
+  background-color: #009e66;
+  color: #fff;
+  letter-spacing: 0.6px;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+.nav_area_content .passing_out{
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #009e66;
+}
+.nav_area_content .skill_icon{
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+.nav_area_content .skill_icon img{
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.nav_area_content  .skill_area{
+  margin: 20px 0;
+}
+.project_show {
+  margin: 25px 0;
+}
+
+.project_show .temaplate_pic .img_control{
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.project_show .temaplate_pic .img_control img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: all 8s;
+}
+.project_show .temaplate_pic .img_control:hover img{
+  object-position: bottom center;
+}
+.project_show .temaplate_pic{
+  border-bottom: 1px solid #009e66;
+}
+.project_show .short_details{
+  margin-top: 15px;
+}
+
 
 /*-==================start-About-space==============*/
 
@@ -417,6 +466,9 @@ footer p abbr[title]{
   }
   p{
     font-size: 15px;
+  }
+  .contact_space .locate_me{
+    margin-top: 20px;
   }           
   .port_banner .personal_pic {
     width: 60%;
@@ -426,9 +478,6 @@ footer p abbr[title]{
   .port_banner {
     padding-top: 25px;
     padding-bottom: 45px;
-  }
-  .nav_panel .navigation ul {
-    padding: 30px;
   }
   @keyframes text {
     0% { 
@@ -444,6 +493,13 @@ footer p abbr[title]{
   }
   .commom_head h2 {
     top: 30%;
+  }
+  .full_descrip .my_steps{
+    margin: 15px 0;
+  }
+  .nav_area_content .passing_out{
+    margin-bottom: 12px;
+    margin-top: -3px;
   }
 }
 @media only screen and (max-width:768px){
@@ -464,6 +520,7 @@ footer p abbr[title]{
   h5{
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 0;
   }
   @keyframes text {
     0% { 
@@ -479,6 +536,10 @@ footer p abbr[title]{
   }
   .commom_head h2 {
     top: 27%;
+  }
+  .nav_area_content .skill_icon{
+    width: 95px;
+    height: 95px;
   }
 }
 @media only screen and (max-width:576px){
@@ -524,6 +585,26 @@ footer p abbr[title]{
       width: 55%; 
     }
   }
+  .nav_area_content  .skill_area{
+    text-align: center;
+  }
+  .nav_area_content .skill_icon{
+    margin: 15px auto;
+    margin-top: 0;
+  }
+  .contact_space .locate_me {
+    height: 235px;
+  }
+  .nav_area .status_navigation{
+    width: 100%;
+  }
+  .nav_area .status_navigation button{
+    margin: 0 3px;
+    padding: 5px 10px;    
+  }
+  .nav_panel .navigation ul li a{
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width:480px){
   @keyframes text {
@@ -540,6 +621,9 @@ footer p abbr[title]{
   }
   .commom_head h2 {
     top: 10%;
+  }
+  .contact_space .locate_me{
+    height: 180px;
   }
 }
 @media only screen and (max-width:380px){
